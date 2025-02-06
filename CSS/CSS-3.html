@@ -1,0 +1,208 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Text Box and Animated Shadow</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+	
+	@keyframes shadowPulse {
+		0% {
+		box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0);
+		}
+
+		50% {
+		box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 1);
+		}
+
+		100% {
+		box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0);
+		}
+	}
+	@keyframes shadowPulse-inset {
+		0% {
+		box-shadow:inset 0px 0px 10px 0px hsla(0, 0%, 0%, 0);
+		}
+
+		50% {
+		box-shadow:inset 0px 0px 10px 0px hsla(0, 0%, 0%, 1);
+		}
+
+		100% {
+		box-shadow:inset 0px 0px 10px 0px hsla(0, 0%, 0%, 0);
+		}
+	}
+	@keyframes color-cyle {
+		0%
+		{
+			background-color: red;
+			border-radius: 1em;
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: white;
+		}
+		10%
+		{
+			background-color: yellow;
+			border-radius: 1em;
+			box-shadow: 0px 0px 50px 0px hsla(9, 100%, 100%, 1);
+			color: black;
+		}
+		20%
+		{
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: black;
+		}
+		30%
+		{
+			background-color: blue;
+			border-radius: 1em;
+			box-shadow: 0px 0px 50px 0px hsla(9, 100%, 100%, 1);
+			color: white;
+		}
+		40%
+		{
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: white;
+		}
+		50%
+		{
+			background-color: aquamarine;
+			border-radius: 1em;
+			box-shadow: 0px 0px 50px 0px hsla(9, 100%, 100%, 1);
+			color: black;
+		}
+		60% 
+		{
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: black;
+		}
+		70%
+		{
+			background-color: green;
+			border-radius: 1em;
+			box-shadow: 0px 0px 50px 0px hsla(9, 100%, 100%, 1);
+			color: white;
+		}
+		80%
+		{
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: white;
+		}
+		90%
+		{
+			background-color:springgreen;
+			border-radius: 1em;
+			box-shadow: 0px 0px 50px 0px hsla(9, 100%, 100%, 1);
+			color: black;
+		}
+		100% {
+			background-color: red;
+			border-radius: 1em;
+			box-shadow:inset 0px 0px 50px 0px hsla(9, 100%, 64%, 1);
+			color: white;
+		}
+	}
+	body {
+		background-color:tomato;
+		margin: 4em;
+		border: solid white;
+		padding: 2em;
+	}
+	.color-cyle:hover {
+		animation-name: color-cyle;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
+	.shadow-pulse:hover {
+		animation-name: shadowPulse;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+	h1 {
+		text-align: center;
+		font-family: 'Trebuchet MS';
+	}
+	h2 {
+		text-align: center;
+		font-family: 'Trebuchet MS';
+	}
+	.box {
+		width: 50vw;
+		height: 10vh;
+		background-color: #f0f0f0;
+		margin: 0 auto;
+		border-radius: 1em;
+		padding: 1em;
+	}
+	button{
+		background-color: #f0f0f0;
+		border: 0.1em solid #000;
+		border-radius: 0.4em;
+		padding: 1em;
+		margin: 1em;
+		width: 7vw;
+		height: 5vh;
+		justify-content: center;
+		line-height: 0%;
+	}
+	button:hover {
+		animation-name: shadowPulse-inset;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		width: 8vw;
+		height: 6vh;
+		margin: 0.49em;
+	}
+	.align-center {
+		text-align: center;
+		display: block;
+		margin: 0%;
+		line-height: 0%;
+	}
+	.p-top {
+		line-height:normal;
+		margin: 0 auto;
+		font-size: 0.9em;
+		text-align: justify;
+	}
+	.p-bottom {
+		text-align: center;
+		margin: 0 auto;
+		font-size: 1.5em;
+		padding: 0.8em;
+	}
+	</style>
+	</head>
+	<body>
+	<header>
+	<h1>Animated Shadow and Box</h1>
+	</header>
+	<article>
+		<div class="box shadow-pulse">
+			<p class="p-top">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+				Odit iusto quidem magnam distinctio accusamus obcaecati quis assumenda architecto nesciunt facere, 
+				ducimus et quo animi itaque voluptas ipsum. Esse, debitis earum.
+			</p>
+		</div>
+	</article>
+	<nav>
+		<h2>Navigation</h2>
+			<div class="align-center">
+				<button onclick="window.location.href='aaiiuueeoo.html'">Back</button>
+				<button onclick="window.location.href='aaiiuueeoo.html'">Home</button>
+				<button onclick="window.location.href='aaiiuueeoo.html'">Contact</button>
+				<button onclick="window.location.href='aaiiuueeoo.html'">Next</button>
+			</div>
+	</nav>
+	<article>
+		<h2>Color Cyle</h2>
+		<div class="box color-cyle">
+			<p class="p-bottom">
+				Flash warning
+			</p>
+		</div>
+	</article>
+	</body>
+</html>
